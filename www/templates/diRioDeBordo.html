@@ -1,0 +1,35 @@
+<ion-view title="Diário de Bordo" id="page6" class="principal">
+  <ion-content padding="true" scroll="false" class="has-header">
+    <div class="conteudo">
+    	<div class="diario-text" ng-hide="diarios">
+    		<p>NO MOMENTO VOCÊ NÃO POSSUI NENHUM DIÁRIO-DE-BORDO EM ABERTO</p>
+    	</div>
+    	<div class="diario-text" ng-show="diarios">
+    		<div class="list diario-conteudo">
+		      	<label class="item item-icon-left db-item">
+		          	<i class="icon ion-calendar"></i>
+		          	<h2>Data</h2>
+			      	{{diario.data_inicio | date : 'dd-MM-yyyy'}}
+		      	</label>
+		      	<label class="item item-icon-left db-item" style="font-size: 18px;">
+		          	<i class="icon ion-android-bus"></i>
+		          	<h2>Frota</h2>
+			      	{{diario.marca}} - {{diario.placa}}
+		      	</label>
+		      	<label class="item item-icon-left db-item">
+		          	<i class="icon ion-ios-location"></i>
+		          	<h2>Partida</h2>
+			      	{{diario.ponto_inicio}}
+		      	</label>
+		      	<label class="item item-icon-left db-item">
+		          	<i class="icon ion-ios-location"></i>
+		          	<h2>Destino</h2>
+			      	{{diario.ponto_fim}}
+		      	</label>
+		    </div>
+    	</div>
+    </div>
+    <a ng-click="openModal()" ng-hide="diarios" id="diRioDeBordo-button5" class="button button-assertive button-block btn-one">NOVO DIÁRIO DE BORDO</a>
+    <a ui-sref="menu.jornadas()" ng-show="diarios" id="diRioDeBordo-button5" class="button button-assertive button-block btn-one">ABRIR DIÁRIO DE BORDO</a>
+  </ion-content>
+</ion-view>

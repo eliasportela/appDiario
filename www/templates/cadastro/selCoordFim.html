@@ -1,0 +1,38 @@
+ <ion-modal-view class="secundario">
+   <ion-content>
+   <div class="conteudo nbd-conteudo">
+    <ion-list>
+      <a ng-click="closeCoordFim()">
+        <label class="item item-icon-right db-item">
+          <i class="icon ion-close-round"></i>
+          Selecione o Ponto Final
+        </label>
+      </a>
+      <label class="item-input db-item db-search">
+          <input type="search"
+             placeholder="Buscar Local..."
+             ng-model="search"
+             ng-focus="searchFocused = true"
+             ng-blur="searchFocused = false"
+             ng-change="scrollTop()"
+             class="full-width"
+             style="width: 90%">
+      <button ng-if="search.length"
+              class="button button-icon ion-android-close input-button"
+              ng-click="clearSearch()"
+              style="color: #fff;">
+      </button>
+        </label>
+    </ion-list>
+    <br>
+    <div class="list nbd-lista">
+      <a ng-repeat="coordenada in coordenadas" ng-click="insereDiarioLocal({{coordenada.id_coordenada}})">
+        <label class="item item-icon-right db-item">
+          <i class="icon ion-plus-circled"></i>
+          {{coordenada.ds_localizacao}}
+        </label>
+      </a>
+    </div>
+  </div>
+  </ion-content>
+ </ion-modal-view>

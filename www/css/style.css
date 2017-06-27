@@ -1,0 +1,120 @@
+.principal{
+  background: url(../img/gWXcOZxzTka2GNtyr9Km_highway-1767106_1920.jpg) no-repeat center;
+  background-size:cover;
+}
+.secundario{
+  background: url(../img/fundo.jpg) no-repeat center;
+  background-size:cover;
+}
+
+.conteudo {
+  width: 98%;
+  height: 95%;
+  margin: auto;
+  position: relative;
+  top: 51.5%;
+  transform: translateY(-50%);
+  border: 2px solid #fff;
+  padding-bottom: 40px;
+  background-color: rgba(0,0,0,0.6);
+}
+.btn-one{
+  position: absolute;
+  top: 80%;
+  width: 90%;
+  left: 5%;
+}
+.btn-two{
+  position: absolute;
+  top: 85%;
+  transform: translateY(-50%);
+}button.button.button-block.button-assertive.btn-two{
+  width: 95%;
+  left: 2.5%
+}
+
+/*Boas Vindas*/
+.bv-logo{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color:#FFF;
+  text-align:center
+}.bv-texto{
+  font-size: 30px;
+  color: #fff;
+  }.bv-icon{
+    font-size: 44px;
+  }
+
+/*Login*/
+.lg-form{
+  position: relative;
+  width: 90%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}.conteudo.lg-conteudo{
+  height: 50%;
+  top: 50%;
+}
+.item-input.lg-input{
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+.item-input.lg-input input {
+  font-size: 20px;
+  color: #fff;
+}
+.input-label{
+  font-size: 20px;
+  color: #fff;
+}
+.lg-icon{
+  font-size: 54px;
+}
+
+/*Diarios*/
+.diario-text{
+  text-align: center;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}.diario-text p{
+  font-size: 17px;
+}.diario-conteudo{
+  text-align: left;
+}.diario-conteudo h2{
+  color: #fff;
+  font-size: 26px;
+}
+
+/*modals*/
+.conteudo.nbd-conteudo{
+  top: 50%;
+}
+label.db-item {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  border-bottom: 2px solid #fff;
+}label.db-item input{
+  font-size: 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+.nbd-lista{
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+}
+/*modals Sel Motorista*/
+.db-search{
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
